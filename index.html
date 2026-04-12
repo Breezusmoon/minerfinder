@@ -1219,7 +1219,7 @@ function openMerchLightbox(key) {
 
 // ===== CRYPTO PAYMENT =====
 // REPLACE THIS WITH YOUR NOWPAYMENTS API KEY
-var NOW_API_KEY = 'YOUR_NOWPAYMENTS_API_KEY';
+var NOW_API_KEY = 'T0A30FZ-AMT4K8V-MKVY82B-WD7TKJB';
 
 var selectedCoin = 'btc';
 var payDiscountApplied = false;
@@ -1271,7 +1271,7 @@ async function initPayment() {
   if (!email || !email.includes('@')) { alert('Please enter a valid email'); return; }
   if (!delivery) { alert('Please enter your delivery address'); return; }
 
-  if (NOW_API_KEY === 'YOUR_NOWPAYMENTS_API_KEY') {
+  if (NOW_API_KEY === 'T0A30FZ-AMT4K8V-MKVY82B-WD7TKJB') {
     // Demo mode - show placeholder while API key not set
     document.getElementById('pay-result').style.display = 'block';
     document.getElementById('pay-address-val').textContent = 'Add your NOWPayments API key to activate live payments';
