@@ -1737,8 +1737,7 @@ async function initPayment() {
       alert('Payment error: ' + (data.message || 'Please try again'));
     }
   } catch(e) {
-    alert('Connecti
-on error. Please try again.');
+    alert('Connection error. Please try again.');
   }
   var btn=document.querySelector('.pay-btn');
   if(btn){btn.disabled=false;document.getElementById('pay-btn-text').textContent='Generate Payment';}
